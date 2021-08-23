@@ -1,0 +1,24 @@
+openapi: 3.0.2
+tags:
+  - name: hoge
+    description: hoge
+info:
+servers:
+paths:
+  /honge:
+    post:
+      responses:
+        '200':
+          content:
+            application/json:
+              examples:
+                正常:
+                  value:
+                    monge: 123
+        '400':
+          content:
+            application/json:
+              examples:
+                必須キー不足:
+                  value:
+                    mongee: 234
